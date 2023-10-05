@@ -14,10 +14,29 @@
   "contributes": {
     "commands": [
       {
-        "command": "tokenmanager.helloWorld",
-        "title": "Hello World"
+        "command": "tokenmanager.start",
+        "title": "Start TokenManager"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "tokenmanager",
+          "title": "Token Manager",
+          "icon": "resources/images/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "tokenmanager": [
+        {
+          "id": "tokenmanager",
+          "name": "",
+          "icon": "resources/images/icon.svg",
+          "contextualTitle": "ask;fejs"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
